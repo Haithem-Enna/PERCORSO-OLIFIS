@@ -25,12 +25,11 @@ export default function App() {
       {/* Header: Institutional Context */}
       <header className="w-full shrink-0 h-20 border-b border-[#D1CDC2] px-6 lg:px-12 flex items-center justify-between bg-[#FDFCF9]">
         <div className="flex flex-col">
-          <span className="text-[10px] uppercase tracking-[0.2em] font-sans font-bold text-[#8B8678]">Piattaforma Unica • Portfolio Digitale</span>
-          <h1 className="text-xl lg:text-2xl font-black tracking-tight text-[#1A1A1A] font-serif uppercase">IL MIO CAPOLAVORO</h1>
+          <h1 className="text-xl lg:text-2xl font-black tracking-tight text-[#1A1A1A] font-serif uppercase">IL MIO PERCORSO ALLE OLIMPIADI DI FISICA</h1>
         </div>
         <div className="text-right hidden sm:block">
-          <span className="text-[11px] font-sans font-semibold text-[#8B8678] block italic">Studente: Autore</span>
-          <span className="text-[11px] font-sans text-[#A5A093] block">Anno Scolastico 2023/2024</span>
+          <span className="text-[11px] font-sans font-semibold text-[#8B8678] block italic">Haithem En nadraoui</span>
+          <span className="text-[11px] font-sans text-[#A5A093] block">Anno Scolastico 2025/2026</span>
         </div>
       </header>
 
@@ -38,7 +37,7 @@ export default function App() {
         {/* Sidebar Navigation: The Table of Contents */}
         <aside className="w-full md:w-[300px] border-b md:border-b-0 md:border-r border-[#D1CDC2] p-8 flex flex-col justify-between bg-[#F9F7F2] shrink-0 overflow-y-auto">
           <div className="space-y-6 flex-1">
-            <h3 className="text-[11px] uppercase tracking-[0.15em] font-sans font-bold text-[#A5A093] mb-4">Indice del Libro</h3>
+            <h3 className="text-[11px] uppercase tracking-[0.15em] font-sans font-bold text-[#A5A093] mb-4">Indice</h3>
             <div className="space-y-4">
               {capitoli.map((cap, index) => (
                 <div 
@@ -58,11 +57,6 @@ export default function App() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="hidden md:block p-6 bg-white border border-[#E8E6E1] rounded-lg shadow-sm mt-8">
-            <p className="text-[12px] italic leading-relaxed text-[#5C584E]">"Credo sia l'emozione che solo un uomo libero può provare. Un uomo libero all'inizio di un lungo viaggio la cui conclusione è incerta. Spero..."</p>
-            <p className="mt-3 text-[10px] font-sans font-bold text-[#A5A093] text-right uppercase tracking-wider">— Ellis Boyd 'Red' Redding<br/>Le ali della libertà (1994)</p>
           </div>
         </aside>
 
@@ -142,7 +136,7 @@ export default function App() {
              disabled={currentPageIndex === capitoli.length - 1}
              className="px-4 md:px-6 py-2 bg-[#D15D4D] text-white text-[10px] md:text-[12px] font-sans font-bold hover:bg-[#B04C3E] transition-colors uppercase disabled:opacity-50 cursor-pointer"
           >
-             {currentPageIndex === capitoli.length - 1 ? 'Pubblica su Unica' : 'Capitolo Successivo'}
+             Capitolo Successivo
           </button>
         </div>
       </footer>
