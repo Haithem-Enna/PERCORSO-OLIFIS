@@ -1,0 +1,6 @@
+{
+  "name": "Capolavoro - Olimpiadi di Fisica",
+  "description": "Un libro digitale autobiografico per il Capolavoro Unica sulle competenze acquisite e l'orientamento maturato alle Olimpiadi di Fisica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
